@@ -1,0 +1,28 @@
+<div class="container">
+
+	<section class="searchResult">
+		<p ng-show="q">{{filtered.length}} results for <b>{{q}}</b></p>
+	</section>
+	<table class="table table-hover table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Country Code</th>
+				<th>Capital</th>
+				<th>Area in km&#178;</th>
+				<th>Population</th>
+				<th>Continent</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat=" country in filtered = (countries | filter:q) | orderBy: 'countryName'" ng-click="selectCountry(country); clearSearch()">
+				<td>{{country.countryName}}</td>
+				<td>{{country.countryCode}}</td>
+				<td>{{country.capital}}</td>
+				<td>{{country.areaInSqKm | number:0 }}</td>
+				<td>{{country.population | number:0 }}</td>
+				<td>{{country.continentName}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

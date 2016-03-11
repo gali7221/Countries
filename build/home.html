@@ -1,0 +1,22 @@
+<div id="slides_control">
+  <div>
+    <!--div class="explanation col-md-6 col-md-offset-3">
+      <p><b>"The world is a book, and those who do not travel read only a page."</b><br>
+      <em>- Saint Augustine</em><br>
+      <br>
+      Countries & Capitals will help you discover the world.<br>
+      Careful not to read only one page...
+      </p>
+    </div-->
+    <carousel interval="myInterval">
+      <slide ng-repeat="capital in capitals" active="capital.active" class="slide">
+        <a href="#/countries/{{capital.id}}">
+          <img ng-src="app/images/capitals/{{capital.img}}">
+          <div class="carousel-caption">
+            <h1>{{capital.capital}}, {{capital.country}}</h1>
+          </div>
+        </a>
+      </slide>
+    </carousel>
+  </div>
+</div>

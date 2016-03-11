@@ -1,0 +1,64 @@
+{ "capitals": 
+  [
+    {
+    "capital" : "Addis Ababa",
+    "country" : "Ethiopia",
+    "img" : "addis.jpg",
+    "id" : "ET"
+    },
+    {
+    "capital" : "Athens",
+    "country" : "Greece",
+    "img" : "athens.jpg",
+    "id" : "GR"
+    },
+    {
+    "capital" : "Bangkok",
+    "country" : "Thailand",
+    "img" : "bangkok.jpg",
+    "id" : "TH"
+    },
+    {
+    "capital" : "New Delhi",
+    "country" : "India",
+    "img" : "delhi.jpg",
+    "id" : "IN"
+    },
+    {
+    "capital" : "Jerusalem",
+    "country" : "Israel",
+    "img" : "jerusalem.jpg",
+    "id" : "IL"
+    },
+    {
+    "capital" : "London",
+    "country" : "United Kingdom",
+    "img" : "london.jpg",
+    "id" : "GB"
+    },
+    {
+    "capital" : "Mexico City",
+    "country" : "Mexico",
+    "img" : "mexico.jpg",
+    "id" : "MX"
+    },
+    {
+    "capital" : "Paris",
+    "country" : "France",
+    "img" : "paris.jpeg",
+    "id" : "FR"
+    },
+    {
+    "capital" : "Buenos Aires",
+    "country" : "Argentina",
+    "img" : "buenos.jpg",
+    "id" : "AR"
+    },
+    {
+    "capital" : "Washington DC",
+    "country" : "United States",
+    "img" : "washington.jpg",
+    "id" : "US"
+    }
+  ]
+}

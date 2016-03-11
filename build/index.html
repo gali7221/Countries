@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="CountryApp">
+<head>
+<link rel="icon" href="images/favicon.png">
+
+<link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="./_assets/combined-6f904d6d.css"/>
+<meta charset='UTF-8' />
+<title>Countries & Capitals</title>
+</head>
+
+<body ng-controller="MainCtrl">
+		
+	<header class="navbar navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#/">
+					<img src="images/white_rose.png" />
+					<h1>Countries & Capitals</h1>
+				</a>
+			</div>
+			<form class="searchBar navbar-form navbar-right" role="search" name="instaForm" ng-submit="countriesSearch()">
+				<input type="text" name="query" size="30" autofocus ng-model="query" required placeholder="Search...">
+				<div class="searchButton">
+					<input type="image" class="searchbutton" name="search" src="images/search.png" alt="Search" />
+				</div>				
+			</form>
+			<nav class="menu">
+				<a href="" ng-click="countriesView()">Browse Countries</a>
+			</nav>
+		</div>
+	</header>
+
+	<div ng-class="{loading: isLoading}" ng-show="isLoading">
+		<img src="images/loading.gif" /><p>Loading</p>
+	</div>
+	<div ng-view></div>
+	
+ 
+
+<script src="./_assets/combined-48695dac.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+</body>
+</html>
